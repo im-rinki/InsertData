@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Data Save in Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mt-3">Employee Details</h2>
+     
+      <div
+        class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xxl-12 mt-2"
+      >
+        <div class="col-md-3 col-lg-3 col-xxl-3 col-sm-12 col-xs-12">
+          <label class="text-center"> Employee ID: </label>
+          <input type="text" class="form-control" id="empid">
+        </div>
+        <div class="col-md-3 col-lg-3 col-xxl-3 col-sm-12 col-xs-12">
+          <label class="text-center"> Employee Name:</label>
+          <input type="text" class="form-control" id="empname">
+        </div>
+        <div class="col-md-3 col-lg-3 col-xxl-3 col-sm-12 col-xs-12">
+          <label class="text-center"> Employee Age:</label>
+          <input type="text" class="form-control" id="empage">
+        </div>
+        <div class="col-md-3 col-lg-3 col-xxl-3 col-sm-12 col-xs-12">
+          <label class="text-center"> Employee Email:</label>
+          <input type="text" class="form-control" id="empemail">
+        </div>
+      </div>
+      
+      <button class="btn btn-primary" id="savebtn">Submit</button>
+      </div>
+      <p id="para"></p>
+      <table class="table table-striped" id="myTable">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee Age</th>
+            <th>Employee Email</th>
+          </tr>
+        </thead>
+       
+      </table>
+    <script src="index.js"></script>
+  </body>
+</html>
